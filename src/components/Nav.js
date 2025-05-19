@@ -18,7 +18,7 @@ const Navbar = () => {
     const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
     const [loading, setLoading] = useState(true);
 
-    {/* useEffect(() => {
+    useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
                 setScroll(true);
@@ -46,13 +46,13 @@ const Navbar = () => {
         // Add hide-scroll class to body
         document.body.classList.add('hide-scroll');
 
-       return () => {
+        return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
             clearTimeout(timer);
             document.body.classList.remove('hide-scroll'); // Ensure removal of hide-scroll class on unmount
         };
-    }, []);*/}
+    }, []);
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -63,13 +63,13 @@ const Navbar = () => {
 
     return (
         <>
-            {/* {loading && (
+            {loading && (
                 <div className="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-[#000]">
                     <div className="animate-pulse">
                         <img src={logoloading} alt="Logo" className="w-[30rem]  text-white" />
                     </div>
                 </div>
-            )} */}
+            )}
 
             <div
                 className={`w-full fixed z-40 transition-colors duration-300 border-b border-[#fff] border-opacity-30 ${isMobileOrTablet ? 'bg-[#000] bg-opacity-30 backdrop-blur-lg' : scroll ? 'bg-[#000] bg-opacity-60 backdrop-blur-lg' : 'bg-transparent'
