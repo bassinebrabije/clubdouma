@@ -100,7 +100,7 @@ const Navbar = () => {
             <Service id="Services" />
             {/* <Time id="Time" /> */}
             <Experience />
-            <Trainers id="Trainers" />
+            {/* <Trainers id="Trainers" /> */}
             <Previewimage id="Testimonial" />
             <Contact id="Contact" />
             <Footer />
