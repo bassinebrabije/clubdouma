@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './hero';
-import Service from './Services';
+import Chooseus from './chooseus';
 import Experience from './Experience';
-import Trainers from './Trainers';
+import Members from './Members';
 import Previewimage from './previewimage';
-import Time from './time';
 import Footer from './footer';
 import Contact from './Contact';
 import logo from '../image/logo.png';
@@ -63,13 +62,13 @@ const Navbar = () => {
 
     return (
         <>
-            {/* {loading && (
+            {loading && (
                 <div className="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-[#000]">
                     <div className="animate-pulse">
                         <img src={logoloading} alt="Logo" className="w-[30rem]  text-white" />
                     </div>
                 </div>
-            )} */}
+            )}
             <div
                 className={`w-full fixed z-40 transition-colors duration-300 border-b border-[#fff] border-opacity-30 ${isMobileOrTablet ? 'bg-[#000] bg-opacity-30 backdrop-blur-lg' : scroll ? 'bg-[#000] bg-opacity-60 backdrop-blur-lg' : 'bg-transparent'
                     }`}
@@ -96,13 +95,11 @@ const Navbar = () => {
                 </div>
             </div>
             <Hero />
-            <Service id="Services" />
-            {/* <Time id="Time" /> */}
-            <Trainers id="Trainers" />
+            <Chooseus />
+            <Members />
             <Experience />
-
-            <Previewimage id="Testimonial" />
-            <Contact id="Contact" />
+            <Previewimage />
+            <Contact />
             <Footer />
             <div className="fixed bottom-4 right-4 z-40  sm:right-4">
                 <a href="https://wa.me/+212775902915" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center   bg-green-500  rounded-full p-4 shadow-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green active:bg-green-800">

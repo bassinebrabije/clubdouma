@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function Trainers() {
+function Members() {
     useEffect(() => {
         const script = document.createElement('script');
         script.setAttribute('src', 'https://www.instagram.com/embed.js');
@@ -55,4 +55,4 @@ function Trainers() {
     );
 }
 
-export default Trainers;
+export default Members;
