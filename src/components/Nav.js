@@ -63,14 +63,13 @@ const Navbar = () => {
 
     return (
         <>
-            {loading && (
+            {/* {loading && (
                 <div className="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-[#000]">
                     <div className="animate-pulse">
                         <img src={logoloading} alt="Logo" className="w-[30rem]  text-white" />
                     </div>
                 </div>
-            )}
-
+            )} */}
             <div
                 className={`w-full fixed z-40 transition-colors duration-300 border-b border-[#fff] border-opacity-30 ${isMobileOrTablet ? 'bg-[#000] bg-opacity-30 backdrop-blur-lg' : scroll ? 'bg-[#000] bg-opacity-60 backdrop-blur-lg' : 'bg-transparent'
                     }`}
@@ -88,10 +87,10 @@ const Navbar = () => {
                     </div>
                     <nav className={`flex-col flex-grow pb-4  md:pb-0 md:flex md:justify-end md:flex-row ${open ? 'flex' : 'hidden'}`}>
                         <a className="px-4 py-2 mt-2 tracking-wider  text-base  cursor-pointer	 text-white rounded-lg md:mt-0 hover:text-[#FF0000]" href='/'>Home</a>
-                        <a className="px-4 py-2 mt-2 tracking-wider text-base  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('About')}>About</a>
-                        <a className="px-4 py-2 mt-2 tracking-wider text-base  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Time')}>Time</a>
-                        <a className="px-4 py-2 mt-2 tracking-wider text-base  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Plan')}>Our Plan</a>
-                        <a className="px-4 py-2 mt-2 tracking-wider text-base cursor-pointer	  text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" onClick={() => scrollToSection('Price')}>Price</a>
+                        <a className="px-4 py-2 mt-2 tracking-wider text-base  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" href='/#about' onClick={() => scrollToSection('About')}>About</a>
+                        <a className="px-4 py-2 mt-2 tracking-wider text-base  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" href='/#time' onClick={() => scrollToSection('Time')}>Time</a>
+                        <a className="px-4 py-2 mt-2 tracking-wider text-base  cursor-pointer	 text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" href='/#plan' onClick={() => scrollToSection('Plan')}>Our Plan</a>
+                        <a className="px-4 py-2 mt-2 tracking-wider text-base cursor-pointer	  text-white rounded-lg md:mt-0 md:ml-4 hover:text-[#FF0000]" href='/#price' onClick={() => scrollToSection('Price')}>Price</a>
                         <a href="https://wa.me/+212775902915" target="_blank" rel="noopener noreferrer" className="px-4 py-2  tracking-wider text-base  cursor-pointer bg-[#FF0000]	 text-white rounded-lg md:mt-0 md:ml-4 "  >Contact</a>
                     </nav>
                 </div>
@@ -99,8 +98,9 @@ const Navbar = () => {
             <Hero />
             <Service id="Services" />
             {/* <Time id="Time" /> */}
+            <Trainers id="Trainers" />
             <Experience />
-            {/* <Trainers id="Trainers" /> */}
+
             <Previewimage id="Testimonial" />
             <Contact id="Contact" />
             <Footer />

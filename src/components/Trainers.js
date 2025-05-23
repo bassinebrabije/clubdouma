@@ -1,42 +1,58 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useEffect } from 'react';
 
 function Trainers() {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.setAttribute('src', 'https://www.instagram.com/embed.js');
+        script.setAttribute('async', '');
+        script.onload = () => {
+            window.instgrm?.Embeds.process();
+        };
+        document.body.appendChild(script);
 
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
 
+    const reels = [
+        "https://www.instagram.com/reel/DIq6DPwNdvJ/?utm_source=ig_embed",
+        "https://www.instagram.com/reel/DJUzi5tqUIB/?utm_source=ig_embed",
+        "https://www.instagram.com/reel/DIttsc3tMKn/?utm_source=ig_embed", // replace with actual reel
+        "https://www.instagram.com/reel/DIjlzyyNLIg/", // replace with actual reel
+    ];
 
     return (
-        <div>
-            <section className="relative bg-[#000] overflow-hidden py-12 sm:py-16 lg:py-20" id="Trainers">
-                <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center">
-                        <h1 className="text-4xl font-semibold leading-10 text-white 	 tracking-widest	 sm:text-4xl xl:text-6xl text-center">
-                            Our professional <br /> <span className="text-[#FF0000] ">trainers</span>
-                        </h1>
-                        <p className="text-[#9A9A9A] pt-5 sm:pt-10  text-sm font-light tracking-widest">
-                            Whether you're looking to set up a home gym or enhance your <br className="hidden sm:block" />current workout routine
-                        </p>
-                    </div>
-                    <div className="grid pt-8 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-                        <div className="group relative m-auto h-96 w-full max-w-xs bg-[#FF0000] cursor-pointer overflow-hidden rounded-lg shadow-md">
-                            <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
-                                <img className="h-4/6 w-full object-cover" alt="img" loading="lazy" />
-                                <h1 className="mt-4 px-4 text-center text-xl tracking-widest	  text-white"> hAMZA Aalmai</h1>
-                                <h1 className="text-center font-serif text-white">⭐⭐⭐⭐⭐</h1>
-                                <p className="mt-1 px-4 text-center text-sm text-white font-light">FDJFJLKFKLHFKFLHKLHFLHK. . .</p>
-                            </div>
-                            <div className="absolute left-0 -bottom-96 flex h-full w-full flex-col justify-center transition-all duration-300 ease-in-out group-hover:bottom-0">
-                                <h1 className="mb-2 px-8 text-center  text-xl tracking-widest	 text-white">hAMZA Aalmai </h1>
-                                <p className="px-8 text-center text-white text-sm font-light">FDJFJLKFKLHFKFLHKLHFLHK </p>
-                            </div>
-                        </div>
-
-                    </div>
+        <section className="relative  overflow-hidden py-12 sm:py-16 lg:py-20">
+            <div className="mx-auto px-4 sm:px-6 lg:px-32">
+                <div className="text-center">
+                    <h1 className="text-4xl font-semibold leading-10 text-white tracking-widest sm:text-4xl xl:text-6xl">
+                        Our  <span className="text-red-500">Members</span>
+                    </h1>
                 </div>
-            </section>
 
-        </div>
-    )
+                <div className="grid pt-8  grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4 justify-items-center">
+                    {reels.map((url, index) => (
+                        <div key={index} className="w-full max-w-md overflow-hidden rounded-lg shadow-lg p-4">
+                            <blockquote
+                                className="instagram-media"
+                                data-instgrm-permalink={url}
+                                data-instgrm-version="14"
+                                style={{
+                                    background: '#000',
+                                    border: 0,
+                                    borderRadius: 8,
+                                    margin: '0 auto',
+                                    maxWidth: '100%',
+                                    width: '100%',
+                                }}
+                            ></blockquote>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }
 
-export default Trainers
+export default Trainers;

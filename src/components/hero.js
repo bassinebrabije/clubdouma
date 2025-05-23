@@ -13,9 +13,9 @@ function Hero() {
             className="xl:min-h-screen  flex items-center justify-center"
             style={sectionStyle}
         >
-            <div className="container mx-auto px-4 mt-40 sm:mt-28 md:px-8 text-left">
+            <div className="container mx-auto px-4 mt-40 sm:mt-45 md:px-8 text-left">
                 <div className="px-4 sm:px-6 lg:px-8 2xl:px-32">
-                    <h1 className="text-white font-bold text-4xl md:text-7xl   tracking-wider	 mb-6 uppercase">
+                    <h1 className="text-white font-bold text-5xl md:text-8xl   tracking-wider	 mb-6 uppercase">
                         Ready TO TRAIN<br className='pt-20' />
                         <span className="text-[#FF0000]">YOUR BODY </span>
                     </h1>
