@@ -21,7 +21,7 @@ function Contact() {
 
     return (
         <div>
-            <div className="sm:pt-6 my-auto bg-[#000]" id='Contact'>
+            <div className="sm:pt-6 my-auto bg-[#000]" >
                 <section className="mx-auto max-w-screen-xl md:rounded-md md:shadow-lg">
                     <div className="grid grid-cols-4 lg:grid-cols-3">
                         <div className="col-span-4 px-8 py-10 md:col-span-2 md:px-10 md:py-12 lg:col-span-1">
