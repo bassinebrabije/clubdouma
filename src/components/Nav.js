@@ -7,6 +7,7 @@ import Previewimage from './previewimage';
 import Footer from './footer';
 import logo from '../image/logo.png';
 import logoloading from '../image/loading.gif';
+import Mamambers from './mamabers';
 import GoogleMap from './GoogleMap';
 
 const Navbar = () => {
@@ -123,6 +124,18 @@ const Navbar = () => {
                             Pricing
                         </a>
                         <a
+                            className={`px-4 py-2 mt-2 tracking-wider text-sm cursor-pointer text-white rounded-lg md:mt-0 md:ml-4 hover:bg-[#FF0000] ${activeNav === 'Members' ? 'bg-[#FF0000]' : ''}`}
+                            href='/#Members'
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('Members');
+                                setActiveNav('Members');
+                                setOpen(false);
+                            }}
+                        >
+                            Members
+                        </a>
+                        <a
                             className={`px-4 py-2 mt-2 tracking-wider text-sm cursor-pointer text-white rounded-lg md:mt-0 md:ml-4 hover:bg-[#FF0000] ${activeNav === 'Location' ? 'bg-[#FF0000]' : ''}`}
                             href='/#Location'
                             onClick={(e) => {
@@ -155,6 +168,7 @@ const Navbar = () => {
                     <Chooseus />
                     <div id="Experience"></div>
                     <Experience />
+                    <Mamambers />
                     <div id="Plan"></div>
                     <Price />
                     <GoogleMap />

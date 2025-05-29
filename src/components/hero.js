@@ -91,8 +91,8 @@ function Hero() {
                             {[
                                 { number: '20+', label: 'Years of Experience' },
                                 { number: '14k+', label: 'Happy members' },
-                                { number: '15k+', label: 'Members Join' },
-                                { number: '20+', label: 'Exercise Equipment' },
+                                { number: '10k+', label: 'Members Join' },
+                                { number: '40+', label: 'Exercise Equipment' },
                             ].map((item, index) => (
                                 <motion.div
                                     key={index}

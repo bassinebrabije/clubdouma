@@ -5,17 +5,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import Img1 from '../image/all/1.jpg';
-import Img2 from '../image/all/2.jpg';
-import Img3 from '../image/all/3.jpg';
-import Img4 from '../image/all/4.jpg';
-import Img5 from '../image/all/5.jpg';
-import Img6 from '../image/all/6.jpg';
-import Img7 from '../image/all/7.jpg';
-import Img8 from '../image/all/8.png';
+import Img1 from '../image/mamabers/1.jpeg';
+import Img2 from '../image/mamabers/2.jpeg';
+import Img3 from '../image/mamabers/3.jpeg';
+import Img4 from '../image/mamabers/4.jpeg';
+import Img5 from '../image/mamabers/5.jpeg';
+import Img6 from '../image/mamabers/6.jpeg';
 
-function Previewimage() {
-    const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8];
+
+function Mambers() {
+    const images = [Img1, Img2, Img3, Img4, Img5, Img6];
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalIndex, setModalIndex] = useState(0);
 
@@ -34,7 +33,7 @@ function Previewimage() {
     }, [isModalOpen]);
 
     return (
-        <section className="relative py-1 overflow-hidden mt-10">
+        <section className="relative py-1 overflow-hidden mt-10" id="Members">
             <motion.div
                 className="text-center"
                 initial={{ opacity: 0, y: 50 }}
@@ -42,10 +41,6 @@ function Previewimage() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.5 }}
             >
-                <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl">
-                    Discover
-                    <span className="text-[#FF0000]"> our<br className="block lg:hidden" /> Gym</span>
-                </h1>
             </motion.div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
@@ -69,7 +64,7 @@ function Previewimage() {
                         <SwiperSlide key={index}>
                             <motion.img
                                 src={src}
-                                alt={`Gallery image ${index + 1}`}
+                                alt={`Gmamabersery image ${index + 1}`}
                                 className="h-auto max-w-full rounded-lg cursor-pointer"
                                 whileHover={{ scale: 1.05 }}
                                 initial={{ opacity: 0, y: 30 }}
@@ -153,4 +148,4 @@ function Previewimage() {
     );
 }
 
-export default Previewimage;
+export default Mambers;
