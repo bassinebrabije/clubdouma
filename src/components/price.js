@@ -23,7 +23,7 @@ const PricingSection = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
             >
-                <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl">
+                <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl uppercase">
                     Our <span className="text-[#FF0000]">Plan</span>
                 </h1>
             </motion.div>

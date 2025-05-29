@@ -55,7 +55,17 @@ function Footer() {
                                 scrollToSection('Pricing');
                             }}
                         >
-                            Our Plan
+                            Pricing
+                        </a>
+                        <a
+                            className="px-4 py-2 mt-2 tracking-wider text-sm cursor-pointer text-white rounded-lg md:mt-0 md:ml-4 hover:bg-[#FF0000]"
+                            href="/#Members"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('Members');
+                            }}
+                        >
+                            Members
                         </a>
                     </div>
                 </div>

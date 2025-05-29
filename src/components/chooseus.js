@@ -35,7 +35,7 @@ function Chooseus() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl">
+                    <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl uppercase">
                         Why <span className="text-[#FF0000]">Choose Us</span>
                     </h1>
                     <p className="text-white text-sm pt-3 font-light tracking-widest">

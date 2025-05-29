@@ -42,7 +42,7 @@ function Previewimage() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.5 }}
             >
-                <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl">
+                <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl uppercase">
                     Discover
                     <span className="text-[#FF0000]"> our<br className="block lg:hidden" /> Gym</span>
                 </h1>

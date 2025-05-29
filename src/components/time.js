@@ -24,7 +24,7 @@ const Time = () => {
 
 const PricingCard = ({ title, subtitle, price }) => {
     return (
-        <div className="rounded-2xl overflow-hidden border border-[#FF0000] shadow-xl transition-transform transform hover:scale-105 cursor-pointer bg-[#00000070] w-full">
+        <div className="rounded-2xl overflow-hidden border border-[#FF0000] shadow-xl transition-transform transform hover:scale-105 cursor-pointer bg-[#00000070] ">
             <div className="p-8 text-center">
                 <h2 className="text-xl font-bold text-[#FF0000] mb-4">{title}</h2>
                 {subtitle && <p className="text-white mb-4">{subtitle}</p>}

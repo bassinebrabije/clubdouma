@@ -5,16 +5,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import Img1 from '../image/mamabers/1.jpeg';
-import Img2 from '../image/mamabers/2.jpeg';
-import Img3 from '../image/mamabers/3.jpeg';
-import Img4 from '../image/mamabers/4.jpeg';
-import Img5 from '../image/mamabers/5.jpeg';
-import Img6 from '../image/mamabers/6.jpeg';
-
-
+import Img1 from '../image/mamabers/1.jpg';
+import Img2 from '../image/mamabers/2.jpg';
+import Img3 from '../image/mamabers/3.jpg';
+import Img4 from '../image/mamabers/4.jpg';
+import Img5 from '../image/mamabers/5.jpg';
+import Img6 from '../image/mamabers/6.jpg';
+import Img7 from '../image/mamabers/7.jpg';
+import Img8 from '../image/mamabers/8.jpg';
+import Img9 from '../image/mamabers/9.jpg';
+import Img10 from '../image/mamabers/10.jpg';
+import Img11 from '../image/mamabers/12.jpg';
 function Mambers() {
-    const images = [Img1, Img2, Img3, Img4, Img5, Img6];
+    const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11];
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalIndex, setModalIndex] = useState(0);
 
@@ -33,7 +36,19 @@ function Mambers() {
     }, [isModalOpen]);
 
     return (
-        <section className="relative py-1 overflow-hidden mt-10" id="Members">
+        <section className="relative py-1 overflow-hidden mt-20 mb-20" id="Members">
+            <motion.div
+                className="text-center"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true, amount: 0.5 }}
+            >
+                <h1 className="text-4xl font-extrabold leading-10 tracking-wider text-white xl:text-6xl uppercase">
+                    Our
+                    <span className="text-[#FF0000]">  Mambers</span>
+                </h1>
+            </motion.div>
             <motion.div
                 className="text-center"
                 initial={{ opacity: 0, y: 50 }}
