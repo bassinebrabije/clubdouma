@@ -31,24 +31,29 @@ const PricingSection = () => {
             {/* Pricing Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                    {
-                        title: 'Month',
-                        subtitle: 'Douma Fitness',
-                        price: '120 MAD',
-                        features: ['All Exercise Equipment', 'Any Time'],
-                    },
+
                     {
                         title: 'Month',
                         subtitle: 'Douma Fitness Plus',
                         price: '150 MAD',
                         features: ['All Exercise Equipment', 'Any Time', 'Tapis roulant'],
                     },
+
+                    {
+                        title: 'Month',
+                        subtitle: 'Douma Fitness',
+                        price: '120 MAD',
+                        features: ['All Exercise Equipment', 'Any Time'],
+                    },
+
                     {
                         title: '6 Months',
                         subtitle: 'Douma Fitness Pro',
                         price: '850 MAD',
                         features: ['All Exercise Equipment', 'Any Time', 'Tapis roulant'],
                     },
+
+
                 ].map((item, index) => (
                     <motion.div
                         key={index}
