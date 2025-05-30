@@ -71,7 +71,7 @@ function Hero() {
                             className="mb-3"
                         >
                             <a
-                                href="https://wa.me/+212775902915"
+                                href="https://wa.me/+212659377813"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-[#FF0000] text-white hover:bg-transparent hover:text-[#FF0000] rounded-lg border border-[#FF0000] py-2 px-8 tracking-wider transition duration-200 inline-block"
