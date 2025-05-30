@@ -13,9 +13,9 @@ import Img5 from '../image/all/5.jpg';
 import Img6 from '../image/all/6.jpg';
 import Img7 from '../image/all/7.jpg';
 import Img8 from '../image/all/8.png';
-
+import Img33 from '../image/all/33.jpg';
 function Previewimage() {
-    const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8];
+    const images = [Img1, Img2, Img33, Img3, Img4, Img5, Img6, Img7, Img8];
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalIndex, setModalIndex] = useState(0);
 
